@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=320; user-scalable=no" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Finger-Whistle</title>
+
+	  <script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"></script>
+	  <script type="text/javascript" charset="utf-8">
+      
+        var onDeviceReady = function() {
+            console.log("deviceready fired.");
+        };
+
+        function init() {
+            document.addEventListener("deviceready", onDeviceReady, true);
+        }   
+</script>  
+
+	<link rel="stylesheet" href="sencha/resources/css/sencha-touch.css" type="text/css">
+	<script type="text/javascript" src="sencha/sencha-touch-all.js"></script>
+	
+	<link rel="stylesheet" href="whistle.css" type="text/css">
+	
+	<script type="text/javascript" src="app.js"></script>
+
+  </head>
+  <body onload="init();" id="stage" class="theme">
+   
+
+  </body>
+</html>
