@@ -13,8 +13,15 @@ Ext.application({
     controllers:['Dashboard','Player'],
     launch: function() {
 	/*Handle the back button so user doesn't exit by mistake*/    	
-    	onBackKeyDown:function(){
-    		Ext.Msg.confirm("Exit", "Are you sure you want to exit Finger-Whistle?", navigator.app.exitApp());
+    	function confirmExit(btn){
+    		if(btn=='yes'){
+    			navigator.app.exitApp();
+    		}
+    		
+    	}
+    	
+    	function onBackKeyDown(){
+    		Ext.Msg.confirm("Exit", "Are you sure you want to exit Finger-Whistle?",confirmExit);
     	}
 
 		document.addEventListener("backbutton", onBackKeyDown, false);

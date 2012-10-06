@@ -37,10 +37,10 @@ Ext.define('App.view.Main', {
                 },{
                 	xtype:'carousel',
                 	items:[
-                	       {xtype:'Whistle01'},
-                	       {xtype:'Whistle02'},
-                	       {xtype:'Whistle03'},
-                	       {xtype:'Whistle04'},
+                	       {xtype:'Whistle03'},		//Guys'
+                	       {xtype:'Whistle04'},		//Gals'
+                	       {xtype:'Whistle01'},		//Flirt
+                	       {xtype:'Whistle02'},		//Dog
                 	       {xtype:'WhistleReq'},
                 	       ]
                 },

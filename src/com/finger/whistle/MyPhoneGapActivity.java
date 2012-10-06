@@ -1,4 +1,4 @@
-package com.finger.whistle.source;
+package com.finger.whistle;
 
 import org.apache.cordova.DroidGap;
 import android.os.Bundle;
